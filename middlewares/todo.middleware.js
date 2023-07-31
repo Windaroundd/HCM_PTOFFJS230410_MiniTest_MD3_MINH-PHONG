@@ -20,7 +20,7 @@ module.exports = {
         res.json({ message: "Todo not found”" });
       }
     } else if (METHOD == "POST") {
-      if (indexTitle == -1 && title !== undefined) {
+      if (indexTitle !== -1 && title !== undefined) {
         res.json({ message: "Todo already exists" });
       }
     }
